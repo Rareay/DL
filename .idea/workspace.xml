@@ -1,103 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/creat_sample_one.py" line="14" mnemonic="8" />
-    <bookmark url="file://$PROJECT_DIR$/creat_sample_one.py" line="157" mnemonic="9" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d98279af-8ecb-4ac0-b6da-e9787d78fc52" name="Default Changelist" comment="" />
+    <list default="true" id="ed7ee9df-b68b-4808-b393-3eada06c1b10" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="my_project" />
-  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_mnist.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3915">
-              <caret line="152" column="2" selection-start-line="152" selection-start-column="2" selection-end-line="152" selection-end-column="2" />
-              <folding>
-                <element signature="e#6#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_mnist_2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9288">
-              <caret line="349" column="7" selection-start-line="349" selection-start-column="7" selection-end-line="349" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_mnist_3.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1917">
-              <caret line="71" column="48" selection-start-line="71" selection-start-column="48" selection-end-line="71" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/creat_sample_mult.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="227" column="30" selection-start-line="227" selection-start-column="30" selection-end-line="227" selection-end-column="30" />
-              <folding>
-                <element signature="e#45#68#0" expanded="true" />
-              </folding>
-            </state>
+            <state relative-caret-position="-729" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/creat_sample_one.py">
+        <entry file="file://$PROJECT_DIR$/contrast.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="211" column="15" selection-start-line="211" selection-start-column="15" selection-end-line="211" selection-end-column="15" />
+            <state relative-caret-position="338">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
-                <element signature="e#6#29#0" expanded="true" />
-                <element signature="e#1495#1525#0" />
-                <element signature="e#1592#1658#0" />
+                <element signature="e#10#20#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/temp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>2</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -105,13 +37,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test_minist_2.py" />
-        <option value="$PROJECT_DIR$/test_mnist.py" />
-        <option value="$PROJECT_DIR$/test_mnist_2.py" />
-        <option value="$PROJECT_DIR$/test_mnist_3.py" />
-        <option value="$PROJECT_DIR$/creat_sample_mult.py" />
-        <option value="$PROJECT_DIR$/temp.py" />
-        <option value="$PROJECT_DIR$/creat_sample_one.py" />
+        <option value="$PROJECT_DIR$/contrast.py" />
       </list>
     </option>
   </component>
@@ -121,7 +47,6 @@
     <option name="width" value="1874" />
     <option name="height" value="1096" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -131,8 +56,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="my_project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my_project" type="462c0819:PsiDirectoryNode" />
+              <item name="DL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DL" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -156,9 +81,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.creat_sample_one">
-    <configuration name="creat_sample_mult" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="my_project" />
+  <component name="RunManager">
+    <configuration name="contrast" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -169,94 +94,18 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/creat_sample_mult.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/contrast.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="creat_sample_one" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="my_project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/creat_sample_one.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="temp" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="my_project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/temp.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in test_mnist_2.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="my_project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_mnist_2.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in test_mnist.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="my_project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_mnist.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.creat_sample_one" />
-        <item itemvalue="Python.temp" />
-        <item itemvalue="Python.creat_sample_mult" />
-        <item itemvalue="Python tests.pytest in test_mnist_2.py" />
-        <item itemvalue="Python tests.pytest in test_mnist.py" />
+        <item itemvalue="Python.contrast" />
       </list>
     </recent_temporary>
   </component>
@@ -265,138 +114,56 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d98279af-8ecb-4ac0-b6da-e9787d78fc52" name="Default Changelist" comment="" />
-      <created>1560520073258</created>
+      <changelist id="ed7ee9df-b68b-4808-b393-3eada06c1b10" name="Default Changelist" comment="" />
+      <created>1561120006752</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1560520073258</updated>
+      <updated>1561120006752</updated>
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="pytest_in_test_mnist_py - 2019.06.14 at 22h 57m 41s.xml">
-      <configuration name="pytest in test_mnist.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_mnist_py - 2019.06.14 at 22h 58m 18s.xml">
-      <configuration name="pytest in test_mnist.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_mnist_py - 2019.06.14 at 22h 59m 59s.xml">
-      <configuration name="pytest in test_mnist.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_mnist_py - 2019.06.14 at 23h 00m 32s.xml">
-      <configuration name="pytest in test_mnist.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_mnist_py - 2019.06.14 at 23h 40m 52s.xml">
-      <configuration name="pytest in test_mnist.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_mnist_py - 2019.06.14 at 23h 41m 09s.xml">
-      <configuration name="pytest in test_mnist.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_mnist_py - 2019.06.14 at 23h 41m 37s.xml">
-      <configuration name="pytest in test_mnist.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_mnist_2_py - 2019.06.15 at 18h 49m 55s.xml">
-      <configuration name="pytest in test_mnist_2.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_mnist_2_py - 2019.06.15 at 18h 51m 20s.xml">
-      <configuration name="pytest in test_mnist_2.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_mnist_2_py - 2019.06.15 at 18h 53m 21s.xml">
-      <configuration name="pytest in test_mnist_2.py" configurationId="tests" />
-    </history-entry>
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49948078" visible="true" weight="0.1171024" />
-      <window_info id="Structure" order="1" sideWeight="0.5005192" side_tool="true" weight="0.11696523" />
-      <window_info id="Favorites" order="2" sideWeight="0.5005192" side_tool="true" weight="0.11696523" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13071896" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32848233" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32952183" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991684" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32917964" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917964" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32917964" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test_minist_2.py" />
-    <entry file="file://$PROJECT_DIR$/picture/1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/samplessample_10.jpg" />
-    <entry file="file://$PROJECT_DIR$/samplessample_50.jpg" />
-    <entry file="file://$PROJECT_DIR$/samplessample_0.jpg" />
-    <entry file="file://$PROJECT_DIR$/Loss.png" />
-    <entry file="file://$PROJECT_DIR$/test_mnist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3915">
-          <caret line="152" column="2" selection-start-line="152" selection-start-column="2" selection-end-line="152" selection-end-column="2" />
-          <folding>
-            <element signature="e#6#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_mnist_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9288">
-          <caret line="349" column="7" selection-start-line="349" selection-start-column="7" selection-end-line="349" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_mnist_3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1917">
-          <caret line="71" column="48" selection-start-line="71" selection-start-column="48" selection-end-line="71" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/temp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="378">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/creat_sample_mult.py">
+    <entry file="file://$PROJECT_DIR$/test_mnist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="227" column="30" selection-start-line="227" selection-start-column="30" selection-end-line="227" selection-end-column="30" />
-          <folding>
-            <element signature="e#45#68#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-729" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/creat_sample_one.py">
+    <entry file="file://$PROJECT_DIR$/contrast.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="211" column="15" selection-start-line="211" selection-start-column="15" selection-end-line="211" selection-end-column="15" />
+        <state relative-caret-position="338">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
-            <element signature="e#6#29#0" expanded="true" />
-            <element signature="e#1495#1525#0" />
-            <element signature="e#1592#1658#0" />
+            <element signature="e#10#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
