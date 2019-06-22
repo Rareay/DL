@@ -10,11 +10,11 @@ import cv2 as cv
 # 导入数据
 from tensorflow.examples.tutorials.mnist import input_data
 
-mnist = input_data.read_data_sets('MNIST_data')
+#mnist = input_data.read_data_sets('MNIST_data')
 
 # 获取数据
 class DATA():
-    def __init__(self, samples_path, size, batch_size=1):
+    def __init__(self, samples_path, samples_size, batch_size=1):
         self.__batch_size = batch_size
         self.__batch_count = 0
         self.cycel = 0
@@ -23,17 +23,16 @@ class DATA():
         for one_sample in os.listdir(samples_path):
             sample = samples_path + '/' + one_sample
             img = Image.open(sample)
+            if samples_size[2] == 1:
+                img = img.convert("L")
             # img = img.resize((32, 32), Image.ANTIALIAS)
-            img = img.resize((size[0], size[1]), Image.ANTIALIAS)
+            img = img.resize((samples_size[0], samples_size[1]), Image.ANTIALIAS)
             pic = np.array(img)
-            picture = pic.flatten()
+            picture = pic.flatten()/255
             try:
                 self.__data = np.vstack([self.__data, picture])
             except Exception:
                 self.__data = picture
-                if pic.shape[2] != size[2]:
-                    print("样本图片通道数与指定通道数不一致！")
-                    return
         print("从%s中成功获取数据！" % (samples_path))
 
     def get(self):
@@ -52,9 +51,8 @@ class GAN():
     def __init__(self):
         if not os.path.exists(self.OUTPUT_DIR):
             os.mkdir(self.OUTPUT_DIR)
-        self.train_num = tf.Variable(0)
-        self.train_num = tf.assign(self.train_num, self.train_num+1, name='train_num')
-        self.saver = tf.train.Saver() # 需要放在函数外面
+        self.train_num = tf.Variable(tf.constant(0))
+        self.train_num = tf.assign(self.train_num, self.train_num+1, name='add')
 
     def __lrelu(self, x, leak=0.2):
         return tf.maximum(x, leak * x)
@@ -100,7 +98,7 @@ class GAN():
             h3 = tf.layers.conv2d_transpose(h2, kernel_size=5, filters=64, strides=2, padding='same')
             h3 = tf.nn.relu(tf.contrib.layers.batch_norm(h3, is_training=self.is_training, decay=momentum))
 
-            h4 = tf.layers.conv2d_transpose(h3, kernel_size=5, filters=3, strides=1, padding='valid',
+            h4 = tf.layers.conv2d_transpose(h3, kernel_size=5, filters=self.sample_size[2], strides=1, padding='valid',
                                             activation=tf.nn.tanh, name='g')
             return h4
 
@@ -151,17 +149,17 @@ class GAN():
 
     # 训练
     def train(self, sample_path, sample_size, batch_size, z_dim, train_num=100):
+        self.sample_size = sample_size
         self.X = tf.placeholder(dtype=tf.float32, shape=[None, sample_size[0], sample_size[1], sample_size[2]], name='X')
         self.noise = tf.placeholder(dtype=tf.float32, shape=[None, z_dim], name='noise')
         self.is_training = tf.placeholder(dtype=tf.bool, name='is_training')
         self.optimizer()
-        samples = DATA(samples_path=sample_path, size=sample_size, batch_size=batch_size)
+        samples = DATA(samples_path=sample_path, samples_size=sample_size, batch_size=batch_size)
+        self.saver = tf.train.Saver() # 保存参数得模型
         with tf.Session() as sess:
             try:
                 MODE_META = self.OUTPUT_DIR + '/model/my-model.meta'
-                print(MODE_META)
                 MODE_DIR = self.OUTPUT_DIR + '/model'
-                print(MODE_DIR)
                 saver2 = tf.train.import_meta_graph(MODE_META)
                 saver2.restore(sess, tf.train.latest_checkpoint(MODE_DIR))
                 print("加载模型...")
@@ -170,7 +168,6 @@ class GAN():
                 print("重新开始训练模型...")
                 sess.run(tf.global_variables_initializer())
 
-            sess.run(tf.global_variables_initializer())
             z_samples = np.random.uniform(-1.0, 1.0, [batch_size, z_dim]).astype(np.float32)
             loss = {'d': [], 'g': []}
 
@@ -178,14 +175,18 @@ class GAN():
             while i < train_num:
                 print("第%d次训练" % (i))
                 n = np.random.uniform(-1.0, 1.0, [batch_size, z_dim]).astype(np.float32)
-                batch = (samples.get()/255 - 0.5) * 2
+                batch = samples.get() # 图片的数值在 0 - 1 之间
                 batch = np.reshape(batch, [-1, sample_size[0], sample_size[1] , sample_size[2]])
-                batch_show = (self.montage(batch) + 1)/2
-                plt.axis('off')
-                plt.imshow(batch_show, cmap='gray')
+                if i % 10 == 0:
+                    print(batch.shape)
+                    batch_show = self.montage(batch) * 255
+                    cv.imwrite(self.OUTPUT_DIR + '/sample_%d_A.jpg' % i, batch_show)
+                batch = (batch - 0.5) * 2
+                #plt.axis('off')
+                #plt.imshow(batch_show, cmap='gray')
                 #plt.savefig(os.path.join(self.OUTPUT_DIR, 'sample.jpg'))
                 #plt.show()
-                batch = (batch - 0.5) * 2
+                #batch = (batch - 0.5) * 2
                 d_ls, g_ls = sess.run([self.loss_d, self.loss_g],
                                       feed_dict={self.X: batch, self.noise: n, self.is_training: True})  # 训练中
                 loss['d'].append(d_ls)
@@ -197,22 +198,19 @@ class GAN():
 
                 if i % 10 == 0:
                     print(i, d_ls, g_ls)  # 输出损失函数
-                    gen_imgs = sess.run(self.g,
-                                        feed_dict={self.noise: z_samples, self.is_training: False})  # 用生成器生成图片，噪音保持不变
-                    gen_imgs = (gen_imgs + 1) / 2
+                    gen_imgs = sess.run(self.g, feed_dict={self.noise: z_samples, self.is_training: False})
+                    gen_imgs = (gen_imgs + 1) / 2 * 255
                     gen_imgs = self.montage(gen_imgs)
-                    plt.axis('off')
-                    plt.imshow(gen_imgs, cmap='gray')
-                    plt.savefig(os.path.join(self.OUTPUT_DIR, 'sample_%d.jpg' % i))
-                    # plt.show()
+                    cv.imwrite(self.OUTPUT_DIR + '/sample_%d_B.jpg' % i, gen_imgs)
                 if i % 10 == 0:
                     MODE_SAVE = self.OUTPUT_DIR + '/model/my-model'
+                    print(MODE_SAVE)
                     self.saver.save(sess, MODE_SAVE)
-                    #saver.save(sess, "model/my-model")
                 sess.run(self.train_num)
                 i += 1
 
 
+
 if __name__ == '__main__':
     gan = GAN()
-    gan.train(sample_path='./picture', sample_size=[28,28,3], batch_size=4, z_dim=20, train_num=1000)
+    gan.train(sample_path='./picture3', sample_size=[28,28,1], batch_size=100, z_dim=20, train_num=1000)
